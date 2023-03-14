@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 cat iacta
+=======
+cat /tmp/iacta head -n 3 file | tail -n 10
+>>>>>>> 5c996fe44c6f7a433fa3eec11c279c87af5f84b6
