@@ -1,3 +1,3 @@
 #!/bin/bash
-cat iacta | head -n 3 file | tail -n 10
+cat iacta | head -3 file | tail -10
 
