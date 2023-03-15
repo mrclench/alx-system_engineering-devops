@@ -1,0 +1,3 @@
+#!/bin/bash
+set -o posix;set|grep -E '^(\w+|\s+)(=|\(\))';declare -xf | less
+
