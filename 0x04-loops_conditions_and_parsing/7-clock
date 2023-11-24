@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#Bash script that displays the time
+
+hour_iteration=0
+minute_iteration=1
+
+
+while [ $hour_iteration -le 12 ]; do
+	echo "Hour: $hour_iteration"
+	
+		minute_iteration=1	
+		while [ $minute_iteration -le 59 ]; do
+			echo "$minute_iteration"
+			((minute_iteration++))
+		done
+
+	((hour_iteration++))
+done

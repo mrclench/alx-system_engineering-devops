@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+:#!/usr/bin/env bash
 #Bash script that displays numbers from 1 to 20 and other stuff
 
 iteration=1

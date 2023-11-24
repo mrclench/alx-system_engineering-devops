@@ -10,6 +10,6 @@ while [ $iteration -le 10 ]; do
 		echo "good luck"
 	else
 		echo "Best School"
-	fi:
+	fi
 	((iteration++))
 done
