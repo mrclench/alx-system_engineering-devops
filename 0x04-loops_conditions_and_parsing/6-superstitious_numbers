@@ -1,7 +1,29 @@
 #!/usr/bin/env bash
 #Bash script that displays numbers from 1 to 20 and other stuff
 
-i=0
+iteration=1
+
+while [ $iteration -le 20 ]; do
+	case $iteration in
+		4)
+			echo "$iteration"
+			echo "bad luck from China"
+			;;
+		9)
+			echo "$iteration"
+			echo "bad luck from Japan"
+			;;
+		17)
+			echo "$iteration"
+			echo "bad luck from Italy"
+			;;
+		*)
+			echo "$iteration"
+			;;
+	esac
+	((iteration++))
+done
+	
 
 
 
