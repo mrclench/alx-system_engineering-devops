@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#Bash script that displays numbers from 1 to 100
+
+iteration=1
+
+# shellcheck disable=SC1061
+while [ $iteration -le 100 ]; do
+    if [ $((iteration%3)) == 0 ]; then
+		  echo "Fizz"
+git add
+		fi
+		if [ $((iteration%5)) == 0 ]; then
+      echo "Buzz"
+		fi
+	  if [ $((iteration%3)) == 0 ] && [ $((iteration%5)) == 0 ]; then
+                echo "FizzBuzz"
+	  fi
+        echo "$iteration"
+	((iteration++))
+done
