@@ -3,18 +3,15 @@
 
 iteration=1
 
-# shellcheck disable=SC1061
-while [ $iteration -le 100 ]; do
-    if [ $((iteration%3)) == 0 ]; then
-		  echo "Fizz"
-git add
-		fi
-		if [ $((iteration%5)) == 0 ]; then
-      echo "Buzz"
-		fi
-	  if [ $((iteration%3)) == 0 ] && [ $((iteration%5)) == 0 ]; then
-                echo "FizzBuzz"
-	  fi
-        echo "$iteration"
-	((iteration++))
+while [ "$iteration" -le 100 ]; do
+  if [ $((iteration%3)) == 0 ] && [ $((iteration%5)) == 0 ]; then
+    echo "FizzBuzz"
+  elif [ $((iteration%3)) == 0 ]; then
+		echo "Fizz"
+	elif [ $((iteration%5)) == 0 ]; then
+    echo "Buzz"
+	else
+    echo "$iteration"
+    fi
+	    ((iteration++))
 done
