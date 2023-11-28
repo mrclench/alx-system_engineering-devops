@@ -1,15 +1,12 @@
 #!/usr/bin/env bash
 #Bash script that displays the PID, name and the process that contains bash
 
-script_pid=$$
+pids=$( pgrep bash )
 
-show_bash_processes() {
-    # Find all processes whose name contains the word "bash"
-    pgrep -fl bash | awk -v script_pid="$script_pid" '$1 != script_pid {print $1, $2}'
-}
-
-# Main loop
-while true; do
-    show_bash_processes
-    sleep 5  # Adjust the interval as needed
-done
+if [ -n "$pids" ]
+then
+	for pid in $pids
+	do
+		echo "$pid bash"
+	done
+fi
