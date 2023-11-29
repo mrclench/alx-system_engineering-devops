@@ -1,5 +1,2 @@
 #!/usr/bin/env ruby
-
-regex = /^[hbt*n]{3,7}$/
-
-input = ARGV[0]
+puts ARGV[0].scan(/hbt*n/).join
