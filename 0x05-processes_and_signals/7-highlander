@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 #Bash script that prints indefinitely, sleeps 2 secs and prints again
 
-while:
+while :
 do
+  trap 'echo "I am invincible!!!"' 3 2
 	echo "To infinity and beyond"
 	sleep 2
-	echo "I am invincible!!!"
+
 done
